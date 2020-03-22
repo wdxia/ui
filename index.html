@@ -6,50 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root {
-            --font-size: 14px;
-            --button-height: 2em;
-            --button-bg: white;
-            --button-active-bg: #eeeeee;
-            --border-radius: 4px;
-            --color: #333;
-            --border-color: #555;
-            --border-color-hover: #666;
-        }
-    </style>
-    <style>
-        .x-button {
-            font-size: var(--font-size);
-            height: var(--button-height);
-            padding: 0 1em;
-            border-radius: var(--border-radius);
-            border: 1px solid var(--border-color);
-            background: var(--button-bg);
-            margin-left: 100px;
-            margin-top: 100px;
-        }
-        .x-button:hover {
-            background-color: var(--border-color);
-        }
-    </style>
 </head>
 <body>
 <div id="app">
-    <x-button></x-button>
+    <Buttons></Buttons>
 </div>
-<script src="node_modules/vue/dist/vue.min.js"></script>
-<script src="./button.js" ></script>
-<script>
-    new Vue({
-        el: '#app',
-        data: {}
-    })
-</script>
+<script src="./src/app.js"></script>
 </body>
 </html>
